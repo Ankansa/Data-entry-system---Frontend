@@ -1,0 +1,53 @@
+<div  fxLayoutAlign="center center">
+    <div fxFlex="74" fxLayout="column" fxLayoutAlign="space-around center">
+        <h1 class="text">
+            Welcome to Data entry system
+        </h1>
+
+        <form [formGroup]="entryForm">
+            <div fxLayout="row">
+                <div class="name">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder formControlName="name">
+                        <mat-error>Enter valid Name</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="mail">
+                    <mat-form-field appearance="outline" class="input_box">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder formControlName="emailid">
+                        <mat-error>Enter valid Mail</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="birthday">
+                    <mat-form-field appearance="outline" class="input_box">
+                        <mat-label>Birthday</mat-label>
+                        <input matInput placeholder formControlName="birthDate">
+                        <mat-error>Enter valid Birthday</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="address">
+                    <mat-form-field appearance="outline" class="input_box">
+                        <mat-label>Address</mat-label>
+                        <input matInput placeholder formControlName="address">
+                        <mat-error>Enter valid Address</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="counry">
+                    <mat-form-field appearance="outline" class="input_box">
+                        <mat-label>Country</mat-label>
+                        <input matInput placeholder formControlName="country">
+                        <mat-error>Enter valid Country</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+        <div class="text">
+            <button (click)="submit()" mat-raised-button color="primary">Submit</button>
+        </div>
+        <div class="text">
+            <button routerLink="/list">Check all names</button>
+        </div>
+    </div>
+</div>
