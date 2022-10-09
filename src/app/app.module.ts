@@ -25,8 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from './Components/map/map.component';
 import { EntryComponent } from './Components/entry/entry.component';
 import { FullListComponent } from './Components/full-list/full-list.component';
-import { FilterPipe } from './pipe/filter.pipe';
+import { FilterPipe } from './pipe/searchPipe/filter.pipe';
 import { UpdateComponent } from './Components/update/update.component';
+import { BirthdayPipe } from './pipe/dobPipe/birthday.pipe';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { UpdateComponent } from './Components/update/update.component';
     FullListComponent,
     FilterPipe,
     UpdateComponent,
+    BirthdayPipe,
     
   ],
   imports: [
