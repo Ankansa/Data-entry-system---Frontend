@@ -26,8 +26,8 @@
                 <th>Address</th>
                 <th>Country</th>
             </tr>
-            <tr *ngFor="let content of nameArr | filter:searchString">
-                <td>{{content.name}}</td>
+            <tr  *ngFor="let content of nameArr | filter:searchString" >
+                <td (click)="openDialog(content)">{{content.name}}</td>
                 <td>{{content.emailid}}</td>
                 <td>{{content.birthDate}}</td>
                 <td>{{content.address}}</td>

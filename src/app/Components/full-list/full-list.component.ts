@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/Service/data/data.service';
+import { MatDialog} from '@angular/material/dialog';
+import { UpdateComponent } from '../update/update.component';
+
 
 @Component({
   selector: 'app-full-list',
@@ -13,7 +16,7 @@ export class FullListComponent implements OnInit {
   nameArr: any;
   searchString: any
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.allName()
@@ -37,5 +40,14 @@ export class FullListComponent implements OnInit {
     this.dataService.changeMessage(this.message)
   }
 
+
+  openDialog(item:any){
+    const dialogRef = this.dialog.open(UpdateComponent, {
+      width: "40%",
+      data: item,
+    });
+
+    
+  }
   
 }

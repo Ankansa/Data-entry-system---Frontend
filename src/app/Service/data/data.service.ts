@@ -38,5 +38,14 @@ export class DataService {
     this.messageSource.next(message)
   }
 
+
+  update(data:any,url:any){
+    let httpOptions = {
+      headers: new HttpHeaders({
+        'Content-type': 'application/json',
+      })
+    }
+    return this.httpservice.putService('users/'+url,data,false,httpOptions)
+  }
  
 }
