@@ -1,10 +1,47 @@
-table,
-th,
-td {
-  border: 1px solid black;
+// table,
+// th,
+// td {
+//   border: 1px solid black;
+// }
+
+// .text {
+//   text-align: center;
+//   margin-top: 5%;
+// }
+
+// td{
+//   cursor: pointer;
+// }
+
+.searchdiv {
+  padding: 2%;
 }
 
-.text {
-  text-align: center;
-  margin-top: 5%;
+.matcard {
+  box-shadow: 0 0 6px;
+  margin-top: 2%;
+  // padding-left: 1%;
+  height: fit-content;
+  
+  display: flex;
+  padding: 1%;
+
+
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+
+.wordwrap {
+  word-wrap: break-word;
+}
+
+
+
+h3 {
+  cursor: pointer;
 }

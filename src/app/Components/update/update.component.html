@@ -2,7 +2,7 @@
     <div  fxLayoutAlign="center center" fxLayout.xs="row" fxLayout.sm="row"
         fxFlex.xs="100">
     
-    <form fxFlex.xs="100" fxFlex.sm="100" >
+    <form [formGroup]="updateform" fxFlex.xs="100" fxFlex.sm="100" >
         
         <div class="form">
             <!-- name -->
@@ -14,7 +14,7 @@
                 <div>
                     <mat-form-field appearance="outline">
 
-                        <input name="name" type="text" matInput placeholder="">
+                        <input name="name" type="text" matInput placeholder="" formControlName="name">
                         <mat-error>Enter your name</mat-error>
                     </mat-form-field>
                 </div>
@@ -28,7 +28,7 @@
                 </div>
                 <div>
                     <mat-form-field appearance="outline">
-                        <input name="email" type="text" matInput placeholder="">
+                        <input name="email" type="text" matInput placeholder="" formControlName="emailid">
                         <mat-error>Enter an email address</mat-error>
                     </mat-form-field>
                 </div>
@@ -44,7 +44,7 @@
                 </div>
                 <div>
                     <mat-form-field appearance="outline">
-                        <input name="dob" type="text"   matInput placeholder="">
+                        <input name="dob" type="date"   matInput placeholder="" formControlName="birthDate">
                         <mat-error>Enter a DOB</mat-error>
                     </mat-form-field>
                 </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div>
                     <mat-form-field appearance="outline">
-                        <input name="address" type="text"   matInput placeholder="">
+                        <input name="address" type="text"   matInput placeholder="" formControlName="address">
                         <mat-error>Enter your Address</mat-error>
                     </mat-form-field>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div>
                     <mat-form-field appearance="outline">
-                            <input name="country" type="text"  matInput placeholder="">
+                            <input name="country" type="text"  matInput placeholder="" formControlName="country">
                          
                     
                         <mat-error>Enter your country</mat-error>
@@ -81,7 +81,7 @@
 
 
             <div fxLayoutAlign.xs="column" >
-                <button class="signupbutton" mat-flat-button  >update</button>
+                <button (click)="update()" class="signupbutton" mat-raised-button color="primary"  >update</button>
             </div>
 
 

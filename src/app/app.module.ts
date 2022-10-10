@@ -10,6 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -23,8 +25,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapComponent } from './Components/map/map.component';
 import { EntryComponent } from './Components/entry/entry.component';
 import { FullListComponent } from './Components/full-list/full-list.component';
-import { FilterPipe } from './pipe/filter.pipe';
+import { FilterPipe } from './pipe/searchPipe/filter.pipe';
 import { UpdateComponent } from './Components/update/update.component';
+import { BirthdayPipe } from './pipe/dobPipe/birthday.pipe';
+import { ViewDetailsComponent } from './Components/view-details/view-details.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,8 @@ import { UpdateComponent } from './Components/update/update.component';
     FullListComponent,
     FilterPipe,
     UpdateComponent,
+    BirthdayPipe,
+    ViewDetailsComponent,
     
   ],
   imports: [
@@ -48,7 +54,8 @@ import { UpdateComponent } from './Components/update/update.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
 
   ],
   providers: [],
