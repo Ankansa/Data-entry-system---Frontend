@@ -28,6 +28,7 @@ import { FullListComponent } from './Components/full-list/full-list.component';
 import { FilterPipe } from './pipe/searchPipe/filter.pipe';
 import { UpdateComponent } from './Components/update/update.component';
 import { BirthdayPipe } from './pipe/dobPipe/birthday.pipe';
+import { ViewDetailsComponent } from './Components/view-details/view-details.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { BirthdayPipe } from './pipe/dobPipe/birthday.pipe';
     FilterPipe,
     UpdateComponent,
     BirthdayPipe,
+    ViewDetailsComponent,
     
   ],
   imports: [

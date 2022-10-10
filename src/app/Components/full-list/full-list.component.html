@@ -69,22 +69,22 @@
                 <h3>{{content.name}}</h3>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="5%">
+            <div (click)="openDetails(content)" fxLayout="row" fxLayoutGap="5%">
                 <h3><b>Email :</b></h3>
                 <h3>{{content.emailid}}</h3>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="5%">
+            <div (click)="openDetails(content)" fxLayout="row" fxLayoutGap="5%">
                 <h3><b>Age :</b></h3>
                 <h3> {{content.birthDate | birthday}}</h3>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="5%">
+            <div (click)="openDetails(content)" fxLayout="row" fxLayoutGap="5%">
                 <h3><b>Address :</b></h3>
                 <h3> {{content.address}}</h3>
             </div>
 
-            <div fxLayout="row" fxLayoutGap="5%">
+            <div (click)="openDetails(content)" fxLayout="row" fxLayoutGap="5%">
                 <h3><b>Country :</b></h3>
                 <h3> {{content.country}}</h3>
             </div>
